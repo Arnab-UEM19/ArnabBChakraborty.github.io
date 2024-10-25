@@ -1,0 +1,453 @@
+*{
+  margin:0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+#header{
+  display: flex;
+  height: 17vh;
+  width: 100%;
+  position: fixed;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 20;
+  #leftheader{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    .logo{
+    height: 50%;
+    img{
+      margin-left: 20px;
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+    }
+    }
+  }
+  #rightheader{
+    width: 65vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .logo{
+      height: 50%;
+      img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+      }
+    }
+    #logolink{
+      width: 7vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .icon {
+        font-size: 25px;
+      }
+      .icon {
+        color: rgb(176, 166, 151);
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        justify-content: space-around;
+      }
+      .icon:hover {
+        transform: scale(1.5);
+        color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+      }
+    }
+    .texts{
+      margin-left: 20px;
+      /* font-weight: 500; */
+      cursor: pointer;
+      transition: color 0.3s;
+      color: rgb(176, 166, 151);
+      p{
+        font-size: large;
+        font-style: italic;
+        letter-spacing: 0.8px;
+      }
+    }
+    .texts :hover{
+      color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+    }
+  }
+}
+
+#fakeheader{
+  height: 17vh;
+  background-color: hsl(0, 0%, 100%);
+}
+
+
+#subpage{
+  display: flex;
+  height: 83vh;
+  width: 100%;
+  #subpagepart1{
+    display: flex;
+    #gap{
+      width: 17vw;
+      height: 80vh;
+      background-color: hsl(20, 54.54545455%, 82.74509804%);
+    }
+    #image{
+      display: flex;
+      #bgimage{
+        img{
+          height: 80vh;
+        }
+      }
+      #myimage{
+        position: absolute;
+        img{
+          margin-left: 300px;
+          margin-top: 90px;
+          height: 50vh;
+        }
+      }
+    }
+  }
+  #subpagepart2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 52vw;
+    background-color:  hsl(15, 33%, 88%);
+    #name{
+      margin-left: 120px;
+      margin-right: 35px;
+      h1{
+        font-size: 50px;
+        font-family: serif;
+        /* color: hsla(40, 14.04255319%, 53.92156863%, 1); */
+        color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+      }
+      h3{
+        letter-spacing: 0.15em;
+        line-height: 1.5em;
+        color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+      }
+      p{
+        color: hsla(40, 14.04255319%, 53.92156863%, 1);
+        /* font-style: oblique; */
+        letter-spacing: 0.8px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+#page2{
+  #subpage1{
+    height: 65vh;
+    #education{
+      background-color:  hsl(16, 41%, 95%);
+      height: 60vh;
+      .heading{
+        text-align: center;
+        h2{
+          color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+          /* color: white; */
+          font-size: xx-large;
+          padding-top: 140px;
+          font-family: 'Times New Roman', Times, serif;
+        }
+      }
+    }
+    #box1{
+      display: flex;
+      #subbox1{
+        padding-top: 40px;
+        text-align: center;
+        width: 33vw;
+        padding-left: 40px;
+        p1{
+          color: hsla(40, 14.04255319%, 53.92156863%, 1);
+          /* color: white; */
+          font-size: large;
+          line-height: 2em;
+          font-family: cursive;
+          letter-spacing: 4px;
+      }
+      P{
+        color: hsla(40, 14.04255319%, 53.92156863%, 1);
+          /* color: rgb(215, 215, 215); */
+          font-family: cursive;
+      }
+      }
+      #subbox2{
+        padding-top: 40px;
+        text-align: center;
+        width: 33vw;
+        p1{
+          color: hsla(40, 14.04255319%, 53.92156863%, 1);
+          /* color: white; */
+          font-size: large;
+          line-height: 2em;
+          font-family: cursive;
+          letter-spacing: 4px;
+      }
+      P{
+        color: hsla(40, 14.04255319%, 53.92156863%, 1);
+          /* color: rgb(215, 215, 215); */
+          font-family: cursive;
+      }
+      }
+      #subbox3{
+        padding-right: 40px;
+        padding-top: 40px;
+        text-align: center;
+        width: 33vw;
+        p1{
+          color: hsla(40, 14.04255319%, 53.92156863%, 1);
+          /* color: white; */
+          font-size: large;
+          line-height: 2em;
+          font-family: cursive;
+          letter-spacing: 4px;
+      }
+      P{
+        color: hsla(40, 14.04255319%, 53.92156863%, 1);
+          /* color: rgb(215, 215, 215); */
+          font-family: cursive;
+      }
+      }
+    }
+  }
+  #subpage2{
+    height: 70vh;
+    /* background-color: rgb(145, 142, 142); */
+    #eventsAttended{
+        height: 65vh;
+        .heading{
+            text-align: center;
+            h2{
+              color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+                font-size: xx-large;
+                padding-top: 140px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+        .text{
+            #subbox1{
+                text-align: center;
+                padding-top: 40px;
+                p1{
+                  color: hsla(40, 14.04255319%, 53.92156863%, 1);
+                    font-size: large;
+                    line-height: 2em;
+                    font-family: cursive;
+                }
+                P{
+                  color: hsla(40, 14.04255319%, 53.92156863%, 1);
+                    font-family: cursive;
+                }
+                a{
+                  color: hsla(40, 14.04255319%, 53.92156863%, 1);
+                }
+            }
+        }
+    }
+  }
+  #subpage3{
+    height: 70vh;
+    #experience{
+      background-color:  hsl(16, 41%, 95%);
+      height: 65vh;
+      .heading{
+        text-align: center;
+        h2{
+          color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+          font-size: xx-large;
+          padding-top: 140px;
+          font-family: 'Times New Roman', Times, serif;
+        }
+      }
+      .text{
+        #subbox1{
+          text-align: center;
+          padding-top: 40px;
+          p1{
+            color: hsla(40, 14.04255319%, 53.92156863%, 1);
+            font-size: large;
+            line-height: 2em;
+            font-family: cursive;
+          }
+          P{
+            color: hsla(40, 14.04255319%, 53.92156863%, 1);
+            font-family: cursive;
+          }
+          a{
+            color: hsla(40, 14.04255319%, 53.92156863%, 1);
+          }
+        }
+      }
+    }
+  }
+  #subpage4{
+    height: 60vh;
+    /* background-color: rgb(145, 142, 142); */
+    #membership{
+        height: 55vh;
+        .heading{
+            text-align: center;
+            h2{
+              color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+                font-size: xx-large;
+                padding-top: 140px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+        .text{
+            #subbox1{
+                text-align: center;
+                padding-top: 40px;
+                p1{
+                  color: hsla(40, 14.04255319%, 53.92156863%, 1);
+                    font-size: large;
+                    line-height: 2em;
+                    font-family: cursive;
+                }
+                P{
+                  color: hsla(40, 14.04255319%, 53.92156863%, 1);
+                    font-family: cursive;
+                }
+                a{
+                  color: hsla(40, 14.04255319%, 53.92156863%, 1);
+                }
+            }
+        }
+    }
+  }
+  #subpage5{
+    height: 70vh;
+    #Courses{
+      background-color:  hsl(16, 41%, 95%);
+      height: 65vh;
+      .heading{
+        text-align: center;
+        h2{
+          color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+          font-size: xx-large;
+          padding-top: 140px;
+          font-family: 'Times New Roman', Times, serif;
+        }
+      }
+      .text{
+        #subbox1{
+          text-align: center;
+          padding-top: 40px;
+          p1{
+            color: hsla(40, 14.04255319%, 53.92156863%, 1);
+            font-size: large;
+            line-height: 2em;
+            font-family: cursive;
+          }
+          P{
+            color: hsla(40, 14.04255319%, 53.92156863%, 1);
+            font-family: cursive;
+          }
+          a{
+            color: hsla(40, 14.04255319%, 53.92156863%, 1);
+          }
+        }
+      }
+    }
+  }
+  #subpage6{
+    background-color:  hsl(15, 33%, 88%);
+    height: 55vh;
+    display: flex;
+    #contacts{
+        height: 50vh;
+        #box1{
+            text-align: center;
+            width: 70vw;
+            padding-top: 90px;
+            p1{
+              color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+                font-family: serif;
+                font-size:40px;
+                font-style: italic;
+            }
+            P{
+              color: hsla(40, 14.04255319%, 53.92156863%, 1);
+              font-family: cursive;
+            }
+        }
+        #box2{
+          width: 70vw;
+            text-align: center;
+            #mail{
+              padding-top: 70px;
+              color: hsla(40, 14.04255319%, 53.92156863%, 1);
+                text-align: center;
+                height: auto;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+            #logolink{
+                margin-left: 450px;
+                margin-top: 10px;
+                height: 10vh;
+                width: 10vw;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .icon{
+                  color: hsla(40, 14.04255319%, 53.92156863%, 1);
+                    font-size: 30px;
+                }
+                .icon:hover {
+                    transform: scale(1.5);
+                    color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+                }
+                
+            }
+        }
+    }
+  }
+  #box3{
+    margin-top: 150px;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #backToTop {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+    #iconup {
+        cursor: pointer;
+        transition: color 0.3s;
+        position: absolute;
+        font-size: 50px;
+        color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+    }
+  }
+}
+
+#page3{
+  height: 10vh;
+  
+  #Compitition{
+    margin-top: 30px;
+    background-color:  hsl(15, 33%, 88%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      color: hsla(39.51219512, 30.82706767%, 26.07843137%, 1);
+  }
+}
